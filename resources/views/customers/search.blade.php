@@ -4,15 +4,6 @@
 
 @section('content')
     <h1>郵便番号検索画面</h1>
-    @if ($errors->any())
-        <div class="error">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
     <form action="{{ route('customers.create') }}" method="GET">
         @csrf
         <div>
